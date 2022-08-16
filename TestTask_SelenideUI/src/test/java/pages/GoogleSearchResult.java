@@ -17,7 +17,7 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class GoogleSearchResult {
-    private SelenideElement pictureTabButton = $(Selectors.byText("Картинки"));
+    private SelenideElement pictureTabButton = $("div.hdtb-mitem:nth-child(2) > a:nth-child(1)");
     public SelenideElement getPictureTabButton() {
         return pictureTabButton;
     }
